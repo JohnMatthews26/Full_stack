@@ -12,6 +12,7 @@
   * Photo
 
 **PhotoContainer**
+  - Photo
   - Likes
   - LikeButton
   - Comments
@@ -45,4 +46,4 @@
 | "/users/:id" | "UserProfileContainer" |
 | "/users/:id/photos" | "UserPhotos"
 | "/new-photo" | "NewPhotoContainer" |
-| "/search" | "Search" |
+| "/user-search" | "UserSearch" |
