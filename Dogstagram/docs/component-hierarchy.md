@@ -44,6 +44,5 @@
 | "/home/followees/photos" | "PhotoFeedContainer" |
 | "/photos/:id" | "PhotoContainer" |
 | "/users/:id" | "UserProfileContainer" |
-| "/users/:id/photos" | "UserPhotos"
 | "/new-photo" | "NewPhotoContainer" |
 | "/user-search" | "UserSearch" |
