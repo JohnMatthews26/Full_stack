@@ -42,26 +42,22 @@ sufficient CSS styling:
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Notes Model, API, and components (2 days)
+### Phase 2: Photos Model, API, and components (2 days)
 
-**Objective:** Notes can be created, read, edited and destroyed through
-the API.
+**Objective:** Photos can be created, viewed, edited and destroyed through the API.
 
-### Phase 3: Notebooks (2 days)
+### Phase 3: Followers and followees (1 day)
 
-**Objective:** Notes belong to Notebooks that can be created, read, edited and destroyed through the API.
+**Objective:** Allow users to follow and be followed.
 
-### Phase 4: Tags (1 day)
+### Phase 4: Comments and Likes (2 days)
 
-**Objective:** Notes can be tagged with multiple tags, and tags are searchable.
+**Objective:** Other users can add comments and like a photo (only one like per user per photo).
 
-### Phase 5: Allow Complex Styling in Notes (1 day, W2 Th 6pm)
+### Phase 5: Implement photo feed of all of a user's followees (2 days)
 
-**Objective:** Allow rich text editing of notes.
+**Objective:** Photo feed is ordered chronologically and successfully only shows followees' photos. Also, remove photos from feed if a user has been unfollowed.
 
-### Phase 6: - Pagination / infinite scroll for Notes Index (1 day, W2 F 6pm)
-
-**Objective:** Add infinite scroll to Notes Index
 
 ### Bonus Features (TBD)
 - [ ] Direct messaging
