@@ -37,3 +37,4 @@ column name | data type | details
 id          | integer   | not null, primary key
 photo_id    | integer   | not null, foreign key (references photos)
 body        | text      | not null
+user_id     | integer   | not null, foreign key (references users)
