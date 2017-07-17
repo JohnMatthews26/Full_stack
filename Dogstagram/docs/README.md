@@ -50,13 +50,15 @@ sufficient CSS styling:
 
 **Objective:** Allow users to follow and be followed.
 
-### Phase 4: Comments and Likes (2 days)
+### Phase 4: Implement photo feed of all of a user's followees (2 days)
+
+**Objective:** Photo feed is ordered chronologically and successfully only shows followees' photos. Also, remove photos from feed if a user has been unfollowed.
+
+### Phase 5: Comments and Likes (2 days)
 
 **Objective:** Other users can add comments and like a photo (only one like per user per photo).
 
-### Phase 5: Implement photo feed of all of a user's followees (2 days)
 
-**Objective:** Photo feed is ordered chronologically and successfully only shows followees' photos. Also, remove photos from feed if a user has been unfollowed.
 
 
 ### Bonus Features (TBD)
