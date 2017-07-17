@@ -21,7 +21,7 @@ sufficient CSS styling:
 - [ ] Likes
 - [ ] Commenting on images
 - [ ] Following & Photo feed
- 
+
 
 ## Design Docs
 * [View Wireframes][wireframes]
@@ -30,11 +30,11 @@ sufficient CSS styling:
 * [DB schema][schema]
 * [Sample State][sample-state]
 
-[wireframes]: docs/wireframes
-[components]: docs/component-hierarchy.md
-[sample-state]: docs/sample-state.md
-[api-endpoints]: docs/api-endpoints.md
-[schema]: docs/schema.md
+[wireframes]: /docs/wireframes
+[components]: /docs/component-hierarchy.md
+[sample-state]: /docs/sample-state.md
+[api-endpoints]: /docs/api-endpoints.md
+[schema]: /docs/schema.md
 
 ## Implementation Timeline
 
