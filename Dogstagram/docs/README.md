@@ -21,7 +21,7 @@ sufficient CSS styling:
 - [ ] Likes
 - [ ] Commenting on images
 - [ ] Following & Photo feed
- [link](Dogstagram/README.md)
+ [link](full_stack/Dogstagram/README.md)x
 
 ## Design Docs
 * [View Wireframes][wireframes]
