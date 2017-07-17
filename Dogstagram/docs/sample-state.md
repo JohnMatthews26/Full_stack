@@ -1,8 +1,16 @@
 ```js
 {
-  currentUser: {
-    id: 1,
-    username: "john"
+  users: {
+    currentUser: {
+      id: 1,
+      username: "john",
+      followees: ["2", "3"]
+    },
+    otherusers: {
+      1: {
+        username: "roscoe"
+      }
+    }
   },
   forms: {
     signUp: {errors: []},
