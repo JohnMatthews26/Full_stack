@@ -16,8 +16,10 @@ const App = () => (
       <h1>Dogstagram</h1>
       <GreetingContainer />
     </header>
-    <Route path="/login" component={SessionFormContainer} />
-    <Route path="/signup" component={SessionFormContainer} />
+    <Switch>
+      <Route path="/login" component={SessionFormContainer} />
+      <Route path="/signup" component={SessionFormContainer} />
+    </Switch>
   </div>
 );
 
