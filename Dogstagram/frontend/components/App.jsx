@@ -1,8 +1,7 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import { Provider, Redirect } from 'react-redux';
 import {
   Route,
-  Redirect,
   Switch,
   Link,
   HashRouter
