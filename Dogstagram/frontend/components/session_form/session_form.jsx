@@ -31,7 +31,7 @@ class SessionForm extends React.Component {
 
   signUpButtonText() {
     if (this.props.formType === 'login') {
-      return "Log in";
+      return "Login";
     } else {
       return "Sign up";
     }
@@ -39,9 +39,9 @@ class SessionForm extends React.Component {
 
   navLink() {
   if (this.props.formType === 'login') {
-    return <label>Don't have an account? <Link to="/signup">Sign up</Link></label>;
+    return <label>Don't have an account? <Link to="/signup" className="login_signup_links">Sign up!</Link></label>;
   } else {
-    return <label>Have an account? <Link to="/login">Log in</Link></label>;
+    return <label>Have an account? <Link to="/login" className="login_signup_links">Login</Link></label>;
   }
 }
 
