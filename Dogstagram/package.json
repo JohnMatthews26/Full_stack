@@ -25,6 +25,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "webpack": "webpack",
     "postinstall": "webpack"
   },
   "keywords": [],
