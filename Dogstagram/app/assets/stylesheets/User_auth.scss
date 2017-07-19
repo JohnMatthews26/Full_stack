@@ -39,7 +39,7 @@ h1.logo {
 /* line 32, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 35, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 40, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
-nav.login-signup {
+section.login-signup {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,9 +106,37 @@ form.login-form-box {
   display: flex;
   justify-content: center;
 }
+//
+// section.login-signup_container {
+//     display: flex;
+//     flex-direction: column;
+// }
 
-section.login-signup_container {
-    margin-top: 10%;
+button.header-button {
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px 50px;
+    background-color: #3897f0;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px gray;
+}
+
+hgroup.header-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content:  space-between;
+}
+
+h2.header-name {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+hgroup.header-group {
+    border-bottom: 2px solid black;
 }
