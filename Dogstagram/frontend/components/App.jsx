@@ -8,17 +8,19 @@ import {
 } from 'react-router-dom';
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
-
+import {AuthRoute} from '../util/route_util';
 const App = () => (
   <div>
-    <header>
-      <h1 className="logo">Dogstagram</h1>
-      <GreetingContainer />
-    </header>
-    <Switch>
-      <Route path="/login" component={SessionFormContainer} />
-      <Route path="/signup" component={SessionFormContainer} />
-    </Switch>
+    <section className="login-signup_container">
+      <header>
+        <GreetingContainer />
+        <h1 className="logo">Dogstagram</h1>
+      </header>
+      <Switch>
+        <AuthRoute path="/login" component={SessionFormContainer} />
+        <AuthRoute path="/signup" component={SessionFormContainer} />
+      </Switch>
+    </section>
   </div>
 );
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const sessionLinks = () => (
   <nav className="login-signup">
     <Link to="/login" className="login_signup_links">Login</Link>
-    <Link to="/signup" className="login_signup_links">Sign up!</Link>
+    <Link to="/signup" className="login_signup_links">Sign up</Link>
   </nav>
 );
 

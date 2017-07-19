@@ -7,7 +7,7 @@
       followees: ["2", "3"]
     },
     otherusers: {
-      1: {
+      2: {
         username: "roscoe"
       }
     }
