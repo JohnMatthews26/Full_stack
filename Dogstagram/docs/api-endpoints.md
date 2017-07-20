@@ -20,7 +20,7 @@
 
 ### Photos
 
-- `GET /api/users/:id/photos`
+- `GET /api/photos`
 - `POST /api/photos`
 - `GET /api/photos/:id`
 - `PATCH /api/photos/:id`
