@@ -244,8 +244,7 @@ section.picture_of_app {
 }
 
 section.bottom_border_logged_out {
-    display: flex;
-    flex: 1;
-    height: 100%;
-    background-color: lightgrey;
+  display: block;
+  height: 100px;
+  background-color: lightgrey;
 }
