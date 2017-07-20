@@ -15,7 +15,7 @@ const App = () => (
     <section className="login-signup_container">
       <header>
         <GreetingContainer />
-        <h1 className="logo">Dogstagram</h1>
+        <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/c_scale,w_150/v1500572600/logo_bxburg.jpg" alt="logo"></img></h1>
       </header>
       <Switch>
         <AuthRoute path="/login" component={SessionFormContainer} />
