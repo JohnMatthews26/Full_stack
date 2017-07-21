@@ -20,6 +20,7 @@ const personalGreeting = (currentUser, logout) => (
     </section>
     <h2 className="header-name">Hi, {currentUser.username}!</h2>
     <button className="header-button" onClick={logout}>Log Out</button>
+    <Link to={`/users/${currentUser.id}`} className="user_profile_link">My Profile</Link>
 
 	</hgroup>
 );
