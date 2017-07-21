@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import PhotoIndexItem from './photo_index_item';
+import {withRouter} from 'react-router';
 
 class PhotoIndex extends Component {
   componentDidMount() {
-    this.props.requestAllPhoto();
+
+    this.props.requestAllPhoto(this.props.match.params.user_id);
+  }
+  componentWillReceiveProps(nextProps) {
+    debugger;
+    if (this.props.match.params.user_id !== nextProps.match.params.user_id) {
+      this.props.requestAllPhoto(nextProps.match.params.user_id);
+    }
   }
 
   render() {
@@ -19,4 +27,4 @@ class PhotoIndex extends Component {
   }
 }
 
-export default PhotoIndex;
+export default withRouter(PhotoIndex);

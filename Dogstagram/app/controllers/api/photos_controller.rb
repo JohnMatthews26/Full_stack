@@ -17,7 +17,7 @@ class Api::PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.all
+    @photos = Photo.where(user_id: params[:user_id])
   end
 
   def show

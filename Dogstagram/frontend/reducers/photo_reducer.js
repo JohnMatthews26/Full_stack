@@ -14,7 +14,7 @@ const PhotoReducer = (state = defaultState(), action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ALL_PHOTO:
-      return merge({}, state, { entities: action.photo });
+      return merge({}, defaultState(), { entities: action.photo });
     case RECEIVE_SINGLE_PHOTO:
       const photo = action.payload.photo;
       return merge({}, state, {
