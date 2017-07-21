@@ -1,0 +1,15 @@
+img.photo-index-item {
+    width: 200px;
+    height: 200px;
+}
+
+section.photos_index {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul.photos_index {
+    display: flex;
+    flex-direction: row;
+}
