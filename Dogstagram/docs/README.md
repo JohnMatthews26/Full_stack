@@ -4,7 +4,7 @@
 
 [Trello link][trello]
 
-[heroku]: http://www.dogstagrm.herokuapp.com
+[heroku]: https://dogstagrm.herokuapp.com/#/
 [trello]: https://trello.com/b/ALgfuX0Q/freshernote
 
 ## Minimum Viable Product

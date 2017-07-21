@@ -8,9 +8,7 @@ class PhotoIndex extends Component {
   }
 
   render() {
-    console.log(this.props);
     const photos  = this.props.photo;
-    if (photos){
       return (
         <section className="photos_index">
           <ul className="photos_index">
@@ -18,8 +16,6 @@ class PhotoIndex extends Component {
           </ul>
         </section>
       );
-    }
-
   }
 }
 
