@@ -1,15 +1,28 @@
+/* line 1, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 3, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 img.photo-index-item {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
+/* line 6, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 9, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 section.photos_index {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
+/* line 12, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 16, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 ul.photos_index {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 22, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+li.photo-index-item {
+  margin: 3px;
+  transform: rotate(90deg);
 }
