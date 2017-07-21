@@ -19,9 +19,10 @@ const personalGreeting = (currentUser, logout) => (
       <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/c_scale,w_70/v1500572600/logo_bxburg.jpg" alt="logo"></img></h1>
     </section>
     <h2 className="header-name">Hi, {currentUser.username}!</h2>
-    <button className="header-button" onClick={logout}>Log Out</button>
-    <Link to={`/users/${currentUser.id}`} className="user_profile_link">My Profile</Link>
-
+    <section className="logout-myprofilebuttons">
+      <button className="header-button" onClick={logout}>Log Out</button>
+      <Link to={`/users/${currentUser.id}`} className="user_profile_link">My Profile</Link>
+    </section>
 	</hgroup>
 );
 

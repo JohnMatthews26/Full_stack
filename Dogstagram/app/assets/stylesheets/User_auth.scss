@@ -248,3 +248,15 @@ section.bottom_border_logged_out {
   height: 100px;
   background-color: lightgrey;
 }
+
+a.user_profile_link {
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px 50px;
+    background-color: #3897f0;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px gray;
+}
