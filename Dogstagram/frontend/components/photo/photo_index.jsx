@@ -9,7 +9,7 @@ class PhotoIndex extends Component {
     this.props.requestAllPhoto(this.props.match.params.user_id);
   }
   componentWillReceiveProps(nextProps) {
-    debugger;
+
     if (this.props.match.params.user_id !== nextProps.match.params.user_id) {
       this.props.requestAllPhoto(nextProps.match.params.user_id);
     }
