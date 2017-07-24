@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import UploadPhotoContainer from '../upload_photo/upload_photo_container';
 
 const sessionLinks = () => (
   <nav>
@@ -22,6 +23,7 @@ const personalGreeting = (currentUser, logout) => (
     <section className="logout-myprofilebuttons">
       <button className="header-button" onClick={logout}>Log Out</button>
       <Link to={`/users/${currentUser.id}`} className="user_profile_link">My Profile</Link>
+      <UploadPhotoContainer />
     </section>
 	</hgroup>
 );

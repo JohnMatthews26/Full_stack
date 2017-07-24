@@ -10,6 +10,7 @@ import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
 import SignInBorderContainer from './sign_in_border/sign_in_border_container';
 import UserProfileContainer from './user_profile/user_profile_container';
+import UploadPhotoContainer from './upload_photo/upload_photo_container';
 import {AuthRoute} from '../util/route_util';
 import {ProtectedRoute} from '../util/route_util';
 
@@ -18,6 +19,7 @@ const App = () => (
     <section className="login-signup_container">
       <header>
         <GreetingContainer />
+        
       </header>
       <Switch>
         <AuthRoute path="/login" component={SessionFormContainer} />

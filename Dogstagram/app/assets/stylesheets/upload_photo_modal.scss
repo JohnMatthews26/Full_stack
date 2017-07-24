@@ -1,0 +1,65 @@
+/* line 1, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 3, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 4, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 5, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 13, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 12, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 13, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 15, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+form.upload-image-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* line 22, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 25, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+input.description-input {
+  background-color: whitesmoke;
+  height: 100px;
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+/* line 30, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 34, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px grey;
+  width: 300px;
+  height: 400px;
+}
+
+button.upload-image-button {
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #3897f0;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px gray;
+}
+
+label.description-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

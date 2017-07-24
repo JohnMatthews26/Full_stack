@@ -53,7 +53,7 @@ img.logo {
 section.login-signup {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 /* line 26, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
@@ -138,7 +138,7 @@ button.header-button {
   border-radius: 3px;
   font-size: 14px;
   margin: 10px;
-  padding: 10px 50px;
+  padding: 10px 15px;
   background-color: #3897f0;
   color: #fff;
   text-decoration: none;
@@ -253,10 +253,15 @@ a.user_profile_link {
     border-radius: 3px;
     font-size: 14px;
     margin: 10px;
-    padding: 10px 50px;
+    padding: 10px 15px;
     background-color: #3897f0;
     color: #fff;
     text-decoration: none;
     border: 2px solid black;
     box-shadow: 3px 3px 3px gray;
+}
+
+section.logout-myprofilebuttons {
+    display: flex;
+    flex-direction: row;
 }
