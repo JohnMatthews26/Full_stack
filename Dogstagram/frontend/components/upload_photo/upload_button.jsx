@@ -38,6 +38,7 @@ class UploadButton extends Component {
     e.preventDefault();
     const image = this.state;
     this.props.createPhoto(image);
+    window.location.reload();
 
   }
 
@@ -51,7 +52,6 @@ class UploadButton extends Component {
 
   closeModal() {
     this.setState({modalIsOpen: false});
-    window.location.reload();
   }
 
 
