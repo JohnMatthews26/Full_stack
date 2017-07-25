@@ -3,13 +3,13 @@ import Modal from 'react-modal';
 import {withRouter} from 'react-router';
 
 class PhotoIndexItem extends Component {
-  constructor({photo}, props) {
+  constructor(props) {
     super(props);
     this.state = {
       modalIsOpen: false,
-      url: photo.url,
-      id: photo.id,
-      username: photo.username
+      url: this.props.photo.url,
+      id: this.props.photo.id,
+      username: this.props.photo.username
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -26,7 +26,7 @@ class PhotoIndexItem extends Component {
   }
 
   render(){
-    console.log(this.props);
+
 
 
     return (
