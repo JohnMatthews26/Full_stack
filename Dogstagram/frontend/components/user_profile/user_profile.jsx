@@ -28,8 +28,11 @@ console.log(this.props);
       return (
         <div className="user-profile-parent">
           <div className="user-profile-top-section">
-
-            {username}
+            <div className="user-profile-box">
+              <div className="user-profile-username">
+                {username}
+              </div>
+            </div>
           </div>
           <div className="user-profile-photo-section">
             <PhotoIndexContainer />
