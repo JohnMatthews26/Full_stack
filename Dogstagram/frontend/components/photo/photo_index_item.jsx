@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import {withRouter} from 'react-router';
 
 class PhotoIndexItem extends Component {
   constructor({photo}, props) {
@@ -7,7 +8,8 @@ class PhotoIndexItem extends Component {
     this.state = {
       modalIsOpen: false,
       url: photo.url,
-      id: photo.id
+      id: photo.id,
+      username: photo.username
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -24,6 +26,8 @@ class PhotoIndexItem extends Component {
   }
 
   render(){
+    console.log(this.props);
+
 
     return (
       <div>
@@ -39,7 +43,16 @@ class PhotoIndexItem extends Component {
                 >
                   <div className="image-show-modal-box">
                     <img src={this.state.url} alt={this.state.id} className="photo-show" />
-                    <div className="image-show-info"></div>
+                    <div className="image-show-info">
+
+                      <div className="image-show-username">
+                        <img className="profile-pic-thumbnail"
+                          src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
+                        </img>
+                        {this.state.username}
+                      </div>
+
+                    </div>
                   </div>
                 </Modal>
             </button>
@@ -50,4 +63,4 @@ class PhotoIndexItem extends Component {
   }
 }
 
-export default PhotoIndexItem;
+export default withRouter(PhotoIndexItem);

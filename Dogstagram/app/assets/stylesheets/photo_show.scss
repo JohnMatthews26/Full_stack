@@ -18,3 +18,28 @@ img.photo-show {
   border: 2px solid black;
   transform: rotate(90deg);
 }
+
+
+img.profile-pic-thumbnail {
+    width: 50px;
+    height: 33px;
+}
+
+.image-show-info {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.image-show-username {
+    display: flex;
+flex-direction: row;
+}
+
+.image-show-username {
+    font-size: x-large;
+    color: gray;
+}
