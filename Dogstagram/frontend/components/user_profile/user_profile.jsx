@@ -21,7 +21,7 @@ class UserProfile extends Component {
   }
 
   render() {
-console.log(this.props);
+
   const userId = this.props.match.params.user_id;
   const user = this.props.users.entities[userId];
   const username = user ? user.username : "";
