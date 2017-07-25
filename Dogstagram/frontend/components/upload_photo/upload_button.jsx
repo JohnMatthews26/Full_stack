@@ -38,6 +38,7 @@ class UploadButton extends Component {
     e.preventDefault();
     const image = this.state;
     this.props.createPhoto(image);
+
   }
 
   update(e){
@@ -70,12 +71,13 @@ class UploadButton extends Component {
               <form className="upload-image-form">
                 <button className="upload-image-button" onClick={this.upload}>Select a Photo</button>
                 <label className="description-label">Add a description
-                  <input type="text"
+                  <input type="textarea"
                     value={this.state.description}
                     onChange={this.update('description')}
                     className="description-input"
                   />
                 </label>
+                <img className="preview-of-upload" src={this.state.url}></img>
                 <button className="upload-image-button" onClick={this.handleSubmit}>Submit</button>
                 <div className="close-button" >
                   <button onClick={this.closeModal}>Close</button>

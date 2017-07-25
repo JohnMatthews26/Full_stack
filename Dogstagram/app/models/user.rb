@@ -5,6 +5,10 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6, allow_nil: true }
   after_initialize :ensure_session_token
   has_many :photos
+  has_many :in_follows, class_name: "Follow", foreign_key: "followee_id"
+  has_many :out_follows, class_name: "Follow", foreign_key: "follower_id"
+  has_many :followers, through: :in_follows, source: :follower
+  has_many :followees, through: :out_follows, source: :followee
 
   attr_reader :password
 
@@ -29,6 +33,14 @@ class User < ApplicationRecord
     self.session_token ||= SecureRandom::urlsafe_base64
     self.save
     self.session_token
+  end
+
+  def followed_user_ids
+    @followed_user_ids ||= out_follows.pluck(:followee_id)
+  end
+
+  def follows?(user)
+    followed_user_ids.include?(user.id)
   end
 
   private
