@@ -15,6 +15,7 @@ class UploadButton extends Component {
     this.upload = this.upload.bind(this);
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+
   }
   openModal() {
     this.setState({modalIsOpen: true});
