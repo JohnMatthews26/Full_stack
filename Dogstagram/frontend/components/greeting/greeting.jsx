@@ -17,7 +17,11 @@ const sessionLinks = () => (
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
     <section className="logo_section">
-      <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/c_scale,w_70/v1500572600/logo_bxburg.jpg" alt="logo"></img></h1>
+      <Link to="/" className="logo_link_home">
+        <h1 className="logo">
+          <img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/c_scale,w_70/v1500572600/logo_bxburg.jpg" alt="logo"></img>
+        </h1>
+      </Link>
     </section>
     <h2 className="header-name">Hi, {currentUser.username}!</h2>
     <section className="logout-myprofilebuttons">
