@@ -40,7 +40,7 @@ class SessionForm extends React.Component {
 
   handleDemoButton(e) {
     e.preventDefault();
-    const user = {username:'boxerlover1000', password:'password'};
+    const user = {username:'john', password:'password'};
     this.props.processForm({user});
   }
 

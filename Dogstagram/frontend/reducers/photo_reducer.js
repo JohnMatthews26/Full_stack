@@ -16,7 +16,7 @@ const PhotoReducer = (state = defaultState(), action) => {
     case RECEIVE_ALL_PHOTO:
       return merge({}, defaultState(), { entities: action.photo });
     case RECEIVE_SINGLE_PHOTO:
-      const photo = action.payload.photo;
+      const photo = action.payload;
       return merge({}, state, {
         entities: { [photo.id]: photo },
         currentPhoto: photo.id

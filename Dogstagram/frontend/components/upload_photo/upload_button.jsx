@@ -24,11 +24,12 @@ class UploadButton extends Component {
     e.preventDefault();
     cloudinary.openUploadWidget(
       window.CLOUDINARY_OPTIONS,
-      (error, image) =>{
+      function(error, image) {
         if (!error) {
-          this.setState({url: image[0].url});
+
+          this.setState({url: image[0].secure_url});
         }
-      }
+      }.bind(this)
     );
   }
 
@@ -36,7 +37,7 @@ class UploadButton extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const image = this.state;
-    this.props.createPhoto({image});
+    this.props.createPhoto(image);
   }
 
   update(e){
@@ -66,8 +67,8 @@ class UploadButton extends Component {
             className="photo-upload-modal"
             >
             <div className="modal-box">
-              <form className="upload-image-form" onSubmit={this.handleSubmit}>
-                <button className="upload-image-button" onSubmit={this.upload}>Select a Photo</button>
+              <form className="upload-image-form">
+                <button className="upload-image-button" onClick={this.upload}>Select a Photo</button>
                 <label className="description-label">Add a description
                   <input type="text"
                     value={this.state.description}
@@ -75,6 +76,7 @@ class UploadButton extends Component {
                     className="description-input"
                   />
                 </label>
+                <button className="upload-image-button" onClick={this.handleSubmit}>Submit</button>
                 <div className="close-button" >
                   <button onClick={this.closeModal}>Close</button>
                 </div>
