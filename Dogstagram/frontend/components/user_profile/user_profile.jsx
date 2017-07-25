@@ -29,6 +29,10 @@ class UserProfile extends Component {
         <div className="user-profile-parent">
           <div className="user-profile-top-section">
             <div className="user-profile-box">
+              <div className="user-profile-photo">
+                <img className="profile-pic-photo" src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg"></img>
+
+              </div>
               <div className="user-profile-username">
                 {username}
               </div>

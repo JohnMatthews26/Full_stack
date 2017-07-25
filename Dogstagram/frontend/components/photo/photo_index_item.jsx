@@ -11,6 +11,8 @@ class PhotoIndexItem extends Component {
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+
+
   }
   openModal() {
     this.setState({modalIsOpen: true});
@@ -18,10 +20,11 @@ class PhotoIndexItem extends Component {
 
   closeModal() {
     this.setState({modalIsOpen: false});
-    window.location.reload();
+
   }
 
   render(){
+
     return (
       <div>
         <li className="photo-index-item">
@@ -36,6 +39,7 @@ class PhotoIndexItem extends Component {
                 >
                   <div className="image-show-modal-box">
                     <img src={this.state.url} alt={this.state.id} className="photo-show" />
+                    <div className="image-show-info"></div>
                   </div>
                 </Modal>
             </button>
@@ -45,27 +49,5 @@ class PhotoIndexItem extends Component {
     );
   }
 }
-// const PhotoIndexItem = ({ photo }) => (
-//   <li className="photo-index-item">
-//       <button onClick={modalIsOpen(true)} >
-//         <img src={photo.url} alt={photo.id} className="photo-index-item" />
-//           <Modal
-//           isOpen={modalIsOpen}
-//           onRequestClose={closeModal}
-//           shouldCloseOnOverlayClick={false}
-//           contentLabel="PhotoShowModal"
-//           className="photo-show-modal"
-//           >
-//             <div className="image-show-modal-box">
-//               <img src={photo.url} alt={photo.id} className="photo-index-item" />
-//             </div>
-//           </Modal>
-//       </button>
-//
-//
-//
-//
-//   </li>
-// );
 
 export default PhotoIndexItem;

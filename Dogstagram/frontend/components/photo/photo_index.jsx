@@ -4,6 +4,9 @@ import PhotoIndexItem from './photo_index_item';
 import {withRouter} from 'react-router';
 
 class PhotoIndex extends Component {
+  constructor(props) {
+    super(props);
+  }
   componentDidMount() {
 
     this.props.requestAllPhoto(this.props.match.params.user_id);
