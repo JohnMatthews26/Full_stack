@@ -5,9 +5,15 @@ import {
   RECEIVE_SINGLE_USER
 } from '../actions/users_actions';
 
+import {
+  RECEIVE_FOLLOW,
+  REMOVE_FOLLOW
+} from '../actions/follow_actions';
+
 
 const defaultState = () => Object.freeze({
-  entities: {}
+  entities: {},
+  followed: {follow: false}
 });
 
 const UsersReducer = (state = defaultState(), action) => {
@@ -20,6 +26,10 @@ const UsersReducer = (state = defaultState(), action) => {
       return merge({}, state, {
         entities: { [user.id]: user }
       });
+    case RECEIVE_FOLLOW:
+      return merge({}, state, { followed: action.follow } );
+    case REMOVE_FOLLOW:
+     return merge({}, state, { followed: false } );
     default:
       return state;
   }

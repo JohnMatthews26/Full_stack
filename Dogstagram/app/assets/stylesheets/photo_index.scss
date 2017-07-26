@@ -2,6 +2,7 @@
 /* line 3, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 4, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 5, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 6, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 img.photo-index-item {
   width: 200px;
   height: 200px;
@@ -12,16 +13,19 @@ img.photo-index-item {
 /* line 9, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 11, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 13, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 16, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 section.photos_index {
   list-style: none;
   display: flex;
   flex-direction: row;
+  margin: 100px;
 }
 
 /* line 12, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 16, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 19, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 22, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 26, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 ul.photos_index {
   display: flex;
   flex-direction: row;
@@ -33,6 +37,7 @@ ul.photos_index {
 /* line 22, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 26, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 /* line 32, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
+/* line 37, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_index.scss */
 li.photo-index-item {
   margin: 10px;
   transform: rotate(90deg);

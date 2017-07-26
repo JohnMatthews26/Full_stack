@@ -5,7 +5,8 @@ import UploadPhotoContainer from '../upload_photo/upload_photo_container';
 const sessionLinks = () => (
   <nav>
     <section className="login-signup">
-      <Link to="/login" className="login_signup_links">Login/Demo</Link>
+      <Link to="/login" className="login_signup_links">Demo</Link>
+      <Link to="/login" className="login_signup_links">Login</Link>
       <Link to="/signup" className="login_signup_links">Sign up</Link>
     </section>
     <section className="logo_section">

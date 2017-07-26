@@ -1,17 +1,24 @@
 
-export const changeFollowStatus = (id, method) => {
+export const followUser = (follow) => {
   return $.ajax({
-    url: `api/users/${id}/follow`,
-    method
+    url: `api/follows`,
+    method: 'POST',
+    data: {follow}
   });
 };
 
+export const unfollowUser = (id) => {
+  return $.ajax({
+    url: `api/follows/${id}`,
+    method: 'DELETE'
 
-
-export const followUser = (id) => {
-  changeFollowStatus(id, "POST");
+  });
 };
 
-export const unfollowUser = (id) => {
-  changeFollowStatus(id, "DELETE");
+export const getFollow = (id) => {
+  return $.ajax({
+    url: `api/follows/${id}`,
+    method: 'GET'
+
+  });
 };

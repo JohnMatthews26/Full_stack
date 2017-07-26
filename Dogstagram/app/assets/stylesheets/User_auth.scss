@@ -10,6 +10,7 @@
 /* line 11, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 12, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 13, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 14, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 a.login_signup_links {
   border-radius: 3px;
   font-size: 14px;
@@ -34,6 +35,7 @@ a.login_signup_links {
 /* line 32, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 34, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 36, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 38, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 h1.logo {
   font-size: 26px;
   display: flex;
@@ -45,6 +47,7 @@ h1.logo {
 /* line 40, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 43, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 46, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 49, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 img.logo {
   display: block;
   height: auto;
@@ -62,6 +65,7 @@ img.logo {
 /* line 54, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 58, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 62, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 66, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 section.login-signup {
   display: flex;
   flex-direction: row;
@@ -80,12 +84,14 @@ section.login-signup {
 /* line 69, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 74, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 79, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 84, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 3px;
   box-shadow: 3px 3px 3px 3px grey;
+  width: 200px;
 }
 
 /* line 36, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
@@ -99,6 +105,7 @@ section.login-signup {
 /* line 86, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 92, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 98, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 103, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 input.authsubmitbutton {
   border-radius: 3px;
   font-size: 14px;
@@ -109,6 +116,7 @@ input.authsubmitbutton {
   text-decoration: none;
   border: 2px solid black;
   box-shadow: 3px 3px 3px gray;
+  width: 30px;
 }
 
 /* line 51, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
@@ -121,6 +129,7 @@ input.authsubmitbutton {
 /* line 105, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 112, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 119, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 125, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 label.username_password_label {
   display: flex;
   flex-direction: column;
@@ -137,6 +146,7 @@ label.username_password_label {
 /* line 118, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 126, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 134, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 141, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 input.login-input {
   background-color: whitesmoke;
   height: 20px;
@@ -153,6 +163,7 @@ input.login-input {
 /* line 131, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 140, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 149, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 157, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 form.login-form-box {
   display: flex;
   justify-content: center;
@@ -163,6 +174,7 @@ form.login-form-box {
 /* line 138, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 148, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 158, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 167, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 button.header-button {
   border-radius: 3px;
   font-size: 14px;
@@ -180,6 +192,7 @@ button.header-button {
 /* line 152, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 163, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 174, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 184, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 hgroup.header-group {
   display: flex;
   flex-direction: row;
@@ -191,6 +204,7 @@ hgroup.header-group {
 /* line 160, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 172, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 184, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 195, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 h2.header-name {
   padding: 20px;
   display: flex;
@@ -203,6 +217,7 @@ h2.header-name {
 /* line 169, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 182, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 195, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 207, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 hgroup.header-group {
   box-shadow: 1px 1px 1px 1px grey;
 }
@@ -212,6 +227,7 @@ hgroup.header-group {
 /* line 175, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 189, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 201, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 216, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 ul.borderimages {
   display: flex;
   flex-direction: row;
@@ -222,6 +238,7 @@ ul.borderimages {
 /* line 182, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 197, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 210, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 226, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 li.borderimage {
   border-radius: 3px;
   margin: 10px;
@@ -233,6 +250,7 @@ li.borderimage {
 /* line 190, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 206, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 220, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 237, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 html {
   width: 100%;
   height: 100%;
@@ -242,6 +260,7 @@ html {
 /* line 196, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 213, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 228, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 246, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 body {
   width: 100%;
   height: 100%;
@@ -251,6 +270,7 @@ body {
 /* line 202, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 220, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 236, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 255, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 main#root {
   width: 100%;
   height: 100%;
@@ -260,6 +280,7 @@ main#root {
 /* line 208, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 227, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 244, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 264, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 .mainDiv {
   width: 100%;
   height: 100%;
@@ -269,6 +290,7 @@ main#root {
 /* line 214, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 234, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 252, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 273, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 nav.log-out-border-div {
   width: 100%;
   display: flex;
@@ -280,6 +302,7 @@ nav.log-out-border-div {
 /* line 222, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 243, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 262, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 284, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 section.logged-out-border {
   width: 100%;
   height: 100%;
@@ -292,6 +315,7 @@ section.logged-out-border {
 /* line 231, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 253, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 273, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 296, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 main#root {
   display: flex;
 }
@@ -300,6 +324,7 @@ main#root {
 /* line 236, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 259, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 280, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 304, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 .mainDiv {
   display: flex;
   flex-direction: column;
@@ -308,6 +333,7 @@ main#root {
 /* line 241, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 265, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 287, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 312, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 section.picture_of_app {
   display: flex;
   flex: 2;
@@ -317,6 +343,7 @@ section.picture_of_app {
 /* line 247, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 272, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 295, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 321, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 section.bottom_border_logged_out {
   display: block;
   height: 100px;
@@ -326,6 +353,7 @@ section.bottom_border_logged_out {
 /* line 253, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 279, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 303, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 330, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 a.user_profile_link {
   border-radius: 3px;
   font-size: 14px;
@@ -341,6 +369,7 @@ a.user_profile_link {
 /* line 265, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 292, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 317, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
+/* line 345, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 section.logout-myprofilebuttons {
   display: flex;
   flex-direction: row-reverse;
