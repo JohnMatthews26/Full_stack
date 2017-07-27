@@ -7,7 +7,8 @@ import {
 
 import {
   RECEIVE_FOLLOW,
-  REMOVE_FOLLOW
+  REMOVE_FOLLOW,
+  RECEIVE_ALL_FOLLOWS
 } from '../actions/follow_actions';
 
 
@@ -31,6 +32,7 @@ const UsersReducer = (state = defaultState(), action) => {
       return merge({}, state, { followed: action.follow.follow} );
     case REMOVE_FOLLOW:
      return merge({}, state, { followed: action.follow.follow } );
+  
     default:
       return state;
   }

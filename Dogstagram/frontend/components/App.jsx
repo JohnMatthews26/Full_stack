@@ -19,7 +19,7 @@ const App = () => (
     <section className="login-signup_container">
       <header>
         <GreetingContainer />
-        
+
       </header>
       <Switch>
         <AuthRoute path="/login" component={SessionFormContainer} />
@@ -27,7 +27,6 @@ const App = () => (
       </Switch>
     </section>
     <ProtectedRoute path="/users/:user_id" component={UserProfileContainer} />
-    <SignInBorderContainer />
   </div>
 );
 

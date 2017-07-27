@@ -34,6 +34,12 @@ class Api::FollowsController < ApplicationController
     end
   end
 
+  def index
+    @follows = Follow.where(follower_id: current_user.id)
+    render "api/follows/index"
+  end
+
+
   private
 
   def follow_params

@@ -4,6 +4,7 @@ export const RECEIVE_FOLLOW = "RECEIVE_FOLLOW";
 export const REMOVE_FOLLOW = "REMOVE_FOLLOW";
 export const CREATE_FOLLOW = "CREATE_FOLLOW";
 export const RECEIVE_FOLLOW_ERRORS = "RECEIVE_FOLLOW_ERRORS";
+export const RECEIVE_ALL_FOLLOWS = "RECEIVE_ALL_FOLLOWS";
 
 export const receiveFollow = follow => ({
   type: RECEIVE_FOLLOW,
@@ -19,6 +20,18 @@ export const receiveFollowErrors = errors => ({
   type: RECEIVE_FOLLOW_ERRORS,
   errors
 });
+
+export const receiveAllFollows = follows => ({
+  type: RECEIVE_ALL_FOLLOWS,
+  follows
+});
+
+export const requestAllFollows = () => (dispatch) => {
+  return APIUtil.getAllFollows().then(follows => dispatch(
+    receiveAllFollows(follows)
+  ));
+};
+
 
 export const getFollow = (user_id) => dispatch => (
   APIUtil.getFollow(user_id).then(follow => {

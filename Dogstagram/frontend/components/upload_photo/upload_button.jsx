@@ -72,7 +72,7 @@ class UploadButton extends Component {
               <form className="upload-image-form">
                 <button className="upload-image-button" onClick={this.upload}>Select a Photo</button>
                 <label className="description-label">Add a description
-                  <input type="textarea"
+                  <textarea
                     value={this.state.description}
                     onChange={this.update('description')}
                     className="description-input"

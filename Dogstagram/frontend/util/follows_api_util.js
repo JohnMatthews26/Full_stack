@@ -19,6 +19,13 @@ export const getFollow = (id) => {
   return $.ajax({
     url: `api/follows/${id}`,
     method: 'GET'
-
   });
+};
+
+export const getAllFollows = () => {
+    return $.ajax({
+      url: `api/follows`,
+      method: 'GET',
+
+    });
 };

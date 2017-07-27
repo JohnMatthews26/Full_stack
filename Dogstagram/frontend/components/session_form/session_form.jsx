@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemoButton = this.handleDemoButton.bind(this);
+
   }
 
   componentWillReceiveProps(nextProps) {
@@ -37,6 +38,7 @@ class SessionForm extends React.Component {
       return "Sign up";
     }
   }
+
 
   handleDemoButton(e) {
     e.preventDefault();

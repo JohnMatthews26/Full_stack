@@ -3,24 +3,25 @@ import { Link } from 'react-router-dom';
 import UploadPhotoContainer from '../upload_photo/upload_photo_container';
 
 const sessionLinks = () => (
-  <nav>
+  <nav className="login-page-nav">
+
     <section className="login-signup">
-      <Link to="/login" className="login_signup_links">Demo</Link>
       <Link to="/login" className="login_signup_links">Login</Link>
       <Link to="/signup" className="login_signup_links">Sign up</Link>
     </section>
     <section className="logo_section">
-      <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/c_scale,w_150/v1500572600/logo_bxburg.jpg" alt="logo"></img></h1>
+      <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/v1501173784/a1c6256038a53cb2a5055d06a0169b8d-png-150x125_nznv16.png" alt="logo"></img></h1>
     </section>
   </nav>
 );
 
 const personalGreeting = (currentUser, logout) => (
-	<hgroup className="header-group">
+	<hgroup className="header-group" >
+
     <section className="logo_section">
       <Link to="/" className="logo_link_home">
         <h1 className="logo">
-          <img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/c_scale,w_70/v1500572600/logo_bxburg.jpg" alt="logo"></img>
+          <img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/v1501174273/a1c6256038a53cb2a5055d06a0169b8d-png-70x58_rjei6i.png" alt="logo"></img>
         </h1>
       </Link>
     </section>
