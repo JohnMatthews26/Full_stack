@@ -27,10 +27,10 @@ const UsersReducer = (state = defaultState(), action) => {
         entities: { [user.id]: user }
       });
     case RECEIVE_FOLLOW:
-      
-      return merge({}, state, { followed: Boolean(action.follow)} );
+
+      return merge({}, state, { followed: action.follow.follow} );
     case REMOVE_FOLLOW:
-     return merge({}, state, { followed: Boolean(action.follow) } );
+     return merge({}, state, { followed: action.follow.follow } );
     default:
       return state;
   }

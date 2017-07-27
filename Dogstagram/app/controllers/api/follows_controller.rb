@@ -6,7 +6,7 @@ class Api::FollowsController < ApplicationController
     @follow = Follow.new(follow_params)
 
     if @follow.save
-      render "api/follows/show"
+      render json: {follow: true}
     else
       render json: @follow.errors.full_messages, status: 422
     end
@@ -27,8 +27,10 @@ class Api::FollowsController < ApplicationController
     follower_id: current_user.id
     )
     if @follow
+      follow_dup = @follow.dup
       @follow.destroy
-      render "api/follows/show"
+      @follow = follow_dup
+      render json: {follow: false}
     end
   end
 

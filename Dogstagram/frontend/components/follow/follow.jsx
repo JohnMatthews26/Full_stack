@@ -41,7 +41,6 @@ class Follow extends Component {
       } else {
 
         return (
-
           <button className="follow-button" onClick={this.follow}>
             Follow
           </button>
@@ -53,9 +52,6 @@ class Follow extends Component {
       );
     }
   }
-
-
-
   render() {
 
       return (
