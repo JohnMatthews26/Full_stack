@@ -3,6 +3,7 @@
 /* line 4, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 5, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 6, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 7, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 .ReactModal__Overlay.ReactModal__Overlay--after-open {
   display: flex;
   flex-direction: column;
@@ -15,6 +16,7 @@
 /* line 13, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 15, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 17, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 19, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 form.upload-image-form {
   width: 100%;
   display: flex;
@@ -28,6 +30,7 @@ form.upload-image-form {
 /* line 22, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 25, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 28, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 32, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 input.description-input {
   background-color: whitesmoke;
   height: 100px;
@@ -39,6 +42,7 @@ input.description-input {
 /* line 30, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 34, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 /* line 38, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 43, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 .modal-box {
   display: flex;
   flex-direction: column;
@@ -51,6 +55,7 @@ input.description-input {
 }
 
 /* line 49, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 55, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 button.upload-image-button {
   border-radius: 3px;
   font-size: 14px;
@@ -64,13 +69,22 @@ button.upload-image-button {
 }
 
 /* line 61, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+/* line 68, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 label.description-label {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+/* line 74, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
 img.preview-of-upload {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 79, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/upload_photo_modal.scss */
+textarea.description-input {
+  border: black 1px solid;
+  resize: none;
 }

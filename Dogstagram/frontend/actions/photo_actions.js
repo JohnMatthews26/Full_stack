@@ -10,6 +10,10 @@ export const requestAllPhoto = (user_id) => (dispatch) => {
     .then(photos => dispatch(receiveAllPhoto(photos)));
 };
 
+export const requestPhotoFeed = () => (dispatch) => {
+  return APIUtil.fetchPhotoFeed()
+    .then(photos => dispatch(receiveAllPhoto(photos)));
+};
 
 
 export const requestSinglePhoto = (id) => (dispatch) => {

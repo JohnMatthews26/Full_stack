@@ -32,7 +32,6 @@ const UsersReducer = (state = defaultState(), action) => {
       return merge({}, state, { followed: action.follow.follow} );
     case REMOVE_FOLLOW:
      return merge({}, state, { followed: action.follow.follow } );
-  
     default:
       return state;
   }

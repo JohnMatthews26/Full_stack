@@ -1,0 +1,91 @@
+/* line 1, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 3, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 4, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 5, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+.image-show-modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px grey;
+  width: 500px;
+  height: 700px;
+  background-color: white;
+}
+
+/* line 13, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 16, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 17, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 19, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+img.photo-show {
+  height: 500px;
+  width: 500px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* line 24, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 24, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 27, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+img.profile-pic-thumbnail {
+  width: 50px;
+  height: 33px;
+}
+
+/* line 29, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 30, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 34, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+.image-show-info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+/* line 38, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 40, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 45, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+.image-show-username {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 43, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 46, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_show.scss */
+/* line 52, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+.image-show-username {
+  font-size: x-large;
+  color: gray;
+}
+
+/* line 58, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+section.photos_feed {
+  padding-top: 50px;
+}
+
+/* line 62, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+ul.photos_feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 68, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+.photo-feed-div {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px 3px grey;
+  width: 500px;
+  height: 600px;
+  background-color: white;
+}
+
+/* line 79, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/photo_feed.scss */
+img.photo-feed-img {
+  height: 400px;
+  width: 500px;
+}

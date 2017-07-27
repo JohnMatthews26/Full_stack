@@ -26,6 +26,5 @@ export const getAllFollows = () => {
     return $.ajax({
       url: `api/follows`,
       method: 'GET',
-
     });
 };

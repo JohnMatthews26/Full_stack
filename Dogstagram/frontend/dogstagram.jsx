@@ -4,7 +4,7 @@ import Root from './components/root';
 import configureStore from './store/store';
 import { requestAllPhoto } from './actions/photo_actions';
 import { fetchAllPhoto } from './util/photo_api_util';
-
+import * as APIUtil from './util/follows_api_util';
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
+  window.APIUtil = APIUtil;
   window.getState = store.getState;
   window.store = store;
   window.dispatch = store.dispatch;

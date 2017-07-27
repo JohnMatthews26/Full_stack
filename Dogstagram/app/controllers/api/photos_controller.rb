@@ -17,7 +17,11 @@ class Api::PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.where(user_id: params[:user_id])
+    if params[:user_id]
+      @photos = Photo.where(user_id: params[:user_id])
+    else
+      @photos = current_user.followees.includes(:photos).map(&:photos).flatten
+    end
 
   end
 

@@ -14,6 +14,8 @@ import UploadPhotoContainer from './upload_photo/upload_photo_container';
 import {AuthRoute} from '../util/route_util';
 import {ProtectedRoute} from '../util/route_util';
 
+import PhotoFeedContainer from './photo_feed/photo_feed_container';
+
 const App = () => (
   <div className="mainDiv">
     <section className="login-signup_container">
@@ -26,7 +28,10 @@ const App = () => (
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </Switch>
     </section>
+    <Switch>
     <ProtectedRoute path="/users/:user_id" component={UserProfileContainer} />
+    <ProtectedRoute path="/" component={PhotoFeedContainer} />
+    </Switch>
   </div>
 );
 

@@ -6,6 +6,13 @@ export const fetchAllPhoto = (user_id) => {
   });
 };
 
+export const fetchPhotoFeed = () => {
+  return $.ajax({
+    method: 'GET',
+    url: 'api/photos'
+  });
+};
+
 export const fetchSinglePhoto = (id) => {
   return $.ajax({
     method: 'GET',
