@@ -35,7 +35,7 @@ export const createFollow = follow => dispatch => (
 
 export const destroyFollow = (user_id) => dispatch => (
   APIUtil.unfollowUser(user_id).then(follow => {
-    dispatch(receiveFollow(follow));
+    dispatch(receiveFollow(undefined));
     return follow;
   }).fail(err => dispatch(receiveFollowErrors(err.responseJSON)))
 );

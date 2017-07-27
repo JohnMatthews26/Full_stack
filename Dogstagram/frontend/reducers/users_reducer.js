@@ -13,7 +13,7 @@ import {
 
 const defaultState = () => Object.freeze({
   entities: {},
-  followed: {follow: false}
+  followed: false
 });
 
 const UsersReducer = (state = defaultState(), action) => {
@@ -27,9 +27,10 @@ const UsersReducer = (state = defaultState(), action) => {
         entities: { [user.id]: user }
       });
     case RECEIVE_FOLLOW:
-      return merge({}, state, { followed: action.follow } );
+      
+      return merge({}, state, { followed: Boolean(action.follow)} );
     case REMOVE_FOLLOW:
-     return merge({}, state, { followed: false } );
+     return merge({}, state, { followed: Boolean(action.follow) } );
     default:
       return state;
   }

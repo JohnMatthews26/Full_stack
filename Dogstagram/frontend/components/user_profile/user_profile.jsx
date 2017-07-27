@@ -38,10 +38,11 @@ class UserProfile extends Component {
                 <img className="profile-pic-photo" src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg"></img>
 
               </div>
-              <FollowContainer />
+
               <div className="user-profile-username">
                 {username}
               </div>
+                <FollowContainer />
             </div>
           </div>
           <div className="user-profile-photo-section">

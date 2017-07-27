@@ -15,13 +15,13 @@ class Follow extends Component {
   follow(event) {
     event.preventDefault();
     this.props.createFollow({followee_id: this.props.match.params.user_id, follower_id: this.props.currentUser.id});
-    window.location.reload();
+
   }
 
   unfollow(event) {
     event.preventDefault();
     this.props.destroyFollow(this.props.match.params.user_id);
-    window.location.reload();
+
   }
 
   followCondition() {
@@ -31,8 +31,8 @@ class Follow extends Component {
       parseInt(this.props.match.params.user_id)) {
 
       if (this.props.users.entities[this.props.match.params.user_id]
-        && this.props.users.followed.follow) {
-
+        && this.props.users.followed) {
+          console.log(this.props);
         return (
           <button className="follow-button" onClick={this.unfollow}>
             Unfollow
@@ -49,7 +49,7 @@ class Follow extends Component {
       }
     } else {
       return (
-        <button>Edit Profile</button>
+        <button className="edit-profile-button">Edit Profile</button>
       );
     }
   }

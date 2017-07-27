@@ -66,3 +66,26 @@ img.profile-pic-photo {
   width: 100%;
   height: 100%;
 }
+
+button.follow-button {
+    text-align: center;
+    width: 60px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: #cb4e4e;
+    color: #fff;
+    box-shadow: 0 6px #ab3c3c;
+}
+
+button.edit-profile-button {
+    text-align: center;
+    width: 60px;
+    font-size: small;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: lightgrey;
+    color: #fff;
+    box-shadow: 0 6px darkgray;
+}
