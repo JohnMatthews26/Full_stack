@@ -7,9 +7,7 @@ const loggedOutBorder = () => (
       
     </section>
 
-    <section className="bottom_border_logged_out">
 
-    </section>
   </nav>
 );
 

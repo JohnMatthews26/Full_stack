@@ -16,18 +16,21 @@ import {ProtectedRoute} from '../util/route_util';
 
 import PhotoFeedContainer from './photo_feed/photo_feed_container';
 
+
+
 const App = () => (
   <div className="mainDiv">
     <section className="login-signup_container">
       <header>
         <GreetingContainer />
-
       </header>
       <Switch>
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </Switch>
     </section>
+      <SignInBorderContainer />
+
     <Switch>
     <ProtectedRoute path="/users/:user_id" component={UserProfileContainer} />
     <ProtectedRoute path="/" component={PhotoFeedContainer} />
