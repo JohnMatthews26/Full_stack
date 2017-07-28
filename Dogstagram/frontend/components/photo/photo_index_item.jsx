@@ -9,7 +9,8 @@ class PhotoIndexItem extends Component {
       modalIsOpen: false,
       url: this.props.photo.url,
       id: this.props.photo.id,
-      username: this.props.photo.username
+      username: this.props.photo.username,
+      description: this.props.photo.description
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -51,7 +52,7 @@ class PhotoIndexItem extends Component {
                         </img>
                         {this.state.username}
                       </div>
-
+                      <section className="description-section">{this.state.description}</section>
                     </div>
                   </div>
                 </Modal>

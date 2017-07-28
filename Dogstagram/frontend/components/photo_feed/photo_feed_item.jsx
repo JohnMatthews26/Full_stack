@@ -8,7 +8,8 @@ class PhotoFeedItem extends Component {
     this.state = {
       url: this.props.photo.url,
       id: this.props.photo.id,
-      username: this.props.photo.username
+      username: this.props.photo.username,
+      description: this.props.photo.description
     };
 
 
@@ -33,6 +34,7 @@ class PhotoFeedItem extends Component {
                 </img>
                 {this.state.username}
               </div>
+              <section className="description-section">{this.state.description}</section>
 
             </div>
         </li>

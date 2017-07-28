@@ -46,6 +46,15 @@ class SessionForm extends React.Component {
     this.props.processForm({user});
   }
 
+  showDemoButton() {
+
+    if (this.props.formType === 'login') {
+      return (
+        <input type="submit" value='Demo' className="authsubmitbutton" onClick={this.handleDemoButton}/>
+      );
+    }
+  }
+
 
   renderErrors() {
     return(
@@ -89,7 +98,7 @@ class SessionForm extends React.Component {
             </label>
             <br/>
             <input type="submit" value={this.signUpButtonText()} className="authsubmitbutton"/>
-            <input type="submit" value='Demo' className="authsubmitbutton" onClick={this.handleDemoButton}/>
+            {this.showDemoButton()}
           </div>
         </form>
       </div>
