@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 import {withRouter} from 'react-router';
+import { Link } from 'react-router-dom';
 
 class PhotoFeedItem extends Component {
   constructor(props) {
@@ -9,7 +10,8 @@ class PhotoFeedItem extends Component {
       url: this.props.photo.url,
       id: this.props.photo.id,
       username: this.props.photo.username,
-      description: this.props.photo.description
+      description: this.props.photo.description,
+      user_id: this.props.photo.user_id
     };
 
 
@@ -32,7 +34,7 @@ class PhotoFeedItem extends Component {
                 <img className="profile-pic-thumbnail"
                   src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
                 </img>
-                {this.state.username}
+                <Link to={`/users/${this.state.user_id}`}>{this.state.username}</Link>
               </div>
               <section className="description-section">{this.state.description}</section>
 

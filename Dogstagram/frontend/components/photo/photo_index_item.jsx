@@ -26,6 +26,7 @@ class PhotoIndexItem extends Component {
 
   }
 
+
   render(){
 
 

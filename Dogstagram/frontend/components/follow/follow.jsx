@@ -24,6 +24,8 @@ class Follow extends Component {
 
   }
 
+
+
   followCondition() {
 
 
