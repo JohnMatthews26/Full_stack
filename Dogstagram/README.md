@@ -62,6 +62,8 @@
     end
   ```
 
+  ![alt text](http://res.cloudinary.com/roscoe/image/upload/v1501282157/Screen_Shot_2017-07-28_at_3.45.17_PM_c01wuc.png)
+
 ## Further Plans for Dogstagram
 
 I plan to continue to work on Dogstagram to implement all of the features I have envisioned. Listed below are some of these features.
