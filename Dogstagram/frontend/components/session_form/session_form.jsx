@@ -14,6 +14,9 @@ class SessionForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    if (this.props.match.path !== nextProps.match.path) {
+      this.props.clearErrors();
+    }
     if (nextProps.loggedIn) {
       this.props.history.push('/');
     }

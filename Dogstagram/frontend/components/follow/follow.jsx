@@ -27,21 +27,16 @@ class Follow extends Component {
 
 
   followCondition() {
-
-
     if (this.props.currentUser.id !==
       parseInt(this.props.match.params.user_id)) {
-
       if (this.props.users.entities[this.props.match.params.user_id]
         && this.props.users.followed) {
-          console.log(this.props);
         return (
           <button className="follow-button" onClick={this.unfollow}>
             Unfollow
           </button>
         );
       } else {
-
         return (
           <button className="follow-button" onClick={this.follow}>
             Follow
