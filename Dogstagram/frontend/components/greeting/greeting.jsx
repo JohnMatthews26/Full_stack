@@ -6,7 +6,7 @@ const sessionLinks = () => (
   <nav className="login-page-nav">
 
     <section className="login-signup">
-      <Link to="/login" className="login_signup_links">Login</Link>
+      <Link to="/login" className="login_signup_links">Login/Demo</Link>
       <Link to="/signup" className="login_signup_links">Sign up</Link>
     </section>
     <section className="logo_section">
