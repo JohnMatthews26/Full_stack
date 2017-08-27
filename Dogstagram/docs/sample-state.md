@@ -23,7 +23,8 @@
       user_id: 1,
       likes: ["1", "2"],
       comments: ["1", "2"],
-      url: "dlkfajdj.com"
+      url: "dlkfajdj.com",
+      username: "john"
     }
   },
   likes: {
