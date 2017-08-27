@@ -9,6 +9,7 @@ class User < ApplicationRecord
   has_many :out_follows, class_name: "Follow", foreign_key: "follower_id"
   has_many :followers, through: :in_follows, source: :follower
   has_many :followees, through: :out_follows, source: :followee
+  has_many :likes
 
   attr_reader :password
 
