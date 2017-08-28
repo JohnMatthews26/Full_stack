@@ -5,9 +5,15 @@ import {
   RECEIVE_SINGLE_PHOTO
 } from '../actions/photo_actions';
 
+import {
+  RECEIVE_LIKE,
+  REMOVE_LIKE,
+  RECEIVE_ALL_LIKES
+} from '../actions/likes_actions';
+
 const defaultState = () => Object.freeze({
   entities: {},
-  currentPhoto: null,
+  currentPhoto: null
 });
 
 const PhotoReducer = (state = defaultState(), action) => {

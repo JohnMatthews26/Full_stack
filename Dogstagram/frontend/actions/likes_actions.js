@@ -25,3 +25,30 @@ export const receiveAllLikes = likes => ({
   type: RECEIVE_ALL_LIKES,
   likes
 });
+
+export const requestAllLikes = (photo_id) => (dispatch) => {
+  return APIUtil.fetchAllLikes(photo_id).then(likes => dispatch(
+    receiveAllLikes(likes)
+  ));
+};
+
+
+export const getLike = (id) => dispatch => (
+  APIUtil.getLike(id).then(like => {
+    dispatch(receiveLike(like));
+  })
+);
+
+export const createLike = like => dispatch => (
+  APIUtil.likeUser(like).then(like => {
+    dispatch(receiveLike(like));
+    return like;
+  }).fail(err => dispatch(receiveLikeErrors(err.responseJSON)))
+);
+
+export const destroyLike = (id) => dispatch => (
+  APIUtil.unlikeUser(id).then(like => {
+    dispatch(receiveLike(like));
+    return like;
+  }).fail(err => dispatch(receiveLikeErrors(err.responseJSON)))
+);
