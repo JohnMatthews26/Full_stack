@@ -4,8 +4,9 @@ import { requestPhotoFeed } from '../../actions/photo_actions';
 import { selectAllPhoto } from '../../reducers/selectors';
 import {withRouter} from 'react-router';
 
-const mapStateToProps = ({photo}) => ({
-  photo: selectAllPhoto(photo)
+const mapStateToProps = ({photo, session}) => ({
+  photo: selectAllPhoto(photo),
+  currentUser: session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
