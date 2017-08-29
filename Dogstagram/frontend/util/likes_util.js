@@ -1,16 +1,18 @@
 
-export const createLike = (photo_id) => {
+export const createLike = (like) => {
+  console.log(like);
   return $.ajax({
     method: 'POST',
     url: 'api/likes/',
-    data: {photo_id}
+    data: {like}
   });
 };
 
 export const deleteLike = (id) => {
   return $.ajax({
     method: 'DELETE',
-    url: `api/likes/${id}`
+    url: `api/likes/${id}`,
+
   });
 };
 

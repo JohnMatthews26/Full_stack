@@ -11,17 +11,30 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
-    @like = Like.find(params[:id])
+    @like = Like.find_by(photo_id: params[:id], user_id: current_user.id)
+
+    like_dup = @like
     @like.destroy
+    @like = like_dup
+
     render "api/likes/show"
   end
 
   def index
-    @likes = Like.where(photo_id: params[:photo_id])
+    if params[:photo_id]
+      @likes = Like.where(photo_id: params[:photo_id])
+    else
+      @likes = Like.all
+    end
   end
 
   def show
-    @like = Like.find(params[:id])
+    @like = Like.find_by(photo_id: params[:id], user_id: current_user.id)
+    if @like
+      render "api/likes/show"
+    else
+      render "api/likes/show"
+    end
   end
 
   private

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 import {withRouter} from 'react-router';
+import LikesContainer from '../likes/likes_container';
 
 class PhotoIndexItem extends Component {
   constructor(props) {
@@ -52,7 +53,9 @@ class PhotoIndexItem extends Component {
                           src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
                         </img>
                         {this.state.username}
+                        <LikesContainer photoId={this.props.photo.id}/>
                       </div>
+
                       <section className="description-section">{this.state.description}</section>
                     </div>
                   </div>

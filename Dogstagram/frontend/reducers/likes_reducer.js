@@ -7,24 +7,30 @@ import {
 } from '../actions/likes_actions';
 
 const defaultState = () => Object.freeze({
-  likes: {}
+  entities: {}
 });
 
 const LikesReducer = (state = defaultState(), action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_LIKE:
-      const like = action.payload;
+      const like = action.like;
       return merge({}, state, {
         likes: { [like.id]: like }
       });
     case RECEIVE_ALL_LIKES:
       return merge({}, state, { likes: action.likes });
     case REMOVE_LIKE:
-      const like1 = action.payload;
-      return merge({}, state, {
-        likes: {[like1]: null }
-      });
+      const newState = Object.assign({}, state);
+      const like1 = action.like;
+
+        delete newState.likes[like1.id];
+
+        return newState;
+    default:
+      return state;
 
   }
 };
+
+export default LikesReducer;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import {withRouter} from 'react-router';
 import { Link } from 'react-router-dom';
+import LikesContainer from '../likes/likes_container';
 
 class PhotoFeedItem extends Component {
   constructor(props) {
@@ -34,7 +35,9 @@ class PhotoFeedItem extends Component {
                 <img className="profile-pic-thumbnail"
                   src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
                 </img>
+
                 <Link to={`/users/${this.state.user_id}`}>{this.state.username}</Link>
+                <LikesContainer photoId={this.props.photo.id}/>
               </div>
               <section className="description-section">{this.state.description}</section>
 

@@ -34,21 +34,20 @@ export const requestAllLikes = (photo_id) => (dispatch) => {
 
 
 export const getLike = (id) => dispatch => (
-  APIUtil.getLike(id).then(like => {
+  APIUtil.fetchSingleLike(id).then(like => {
     dispatch(receiveLike(like));
   })
 );
 
 export const createLike = like => dispatch => (
-  APIUtil.likeUser(like).then(like => {
+  APIUtil.createLike(like).then(like => {
     dispatch(receiveLike(like));
     return like;
   }).fail(err => dispatch(receiveLikeErrors(err.responseJSON)))
 );
 
 export const destroyLike = (id) => dispatch => (
-  APIUtil.unlikeUser(id).then(like => {
-    dispatch(receiveLike(like));
-    return like;
+  APIUtil.deleteLike(id).then(like => {
+    dispatch(removeLike(like));
   }).fail(err => dispatch(receiveLikeErrors(err.responseJSON)))
 );
