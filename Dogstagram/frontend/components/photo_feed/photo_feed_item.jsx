@@ -14,10 +14,14 @@ class PhotoFeedItem extends Component {
       description: this.props.photo.description,
       user_id: this.props.photo.user_id
     };
-
-
-
   }
+    componentDidMount() {
+      this.props.requestAllLikes(this.state.id);
+    }
+
+
+
+
 
   render(){
 

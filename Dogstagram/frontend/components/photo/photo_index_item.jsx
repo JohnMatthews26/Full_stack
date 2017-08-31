@@ -18,6 +18,8 @@ class PhotoIndexItem extends Component {
 
 
   }
+
+
   openModal() {
     this.setState({modalIsOpen: true});
   }
@@ -33,6 +35,7 @@ class PhotoIndexItem extends Component {
 
 
     return (
+
       <div>
         <li className="photo-index-item">
             <button onClick={this.openModal} >

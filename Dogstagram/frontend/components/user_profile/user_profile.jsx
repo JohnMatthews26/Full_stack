@@ -14,7 +14,6 @@ class UserProfile extends Component {
       this.props.getFollow(this.props.match.params.user_id);
     } );
 
-    this.props.requestAllLikes();
   }
 
   componentWillReceiveProps(nextProps) {

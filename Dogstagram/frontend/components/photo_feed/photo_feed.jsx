@@ -11,7 +11,7 @@ class PhotoFeed extends Component {
   componentDidMount() {
 
     this.props.requestPhotoFeed();
-    this.props.requestAllLikes(this.props.photo.id);
+
   }
 
   render() {

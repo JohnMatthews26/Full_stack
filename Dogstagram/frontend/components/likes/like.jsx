@@ -10,6 +10,10 @@ class Like extends Component {
     this.unlike = this.unlike.bind(this);
     this.likeStatus = this.likeStatus.bind(this);
   }
+  componentWillMount(){
+    this.props.requestAllLikes(this.props.photoId);
+  }
+  
   like(e) {
     e.preventDefault();
     this.props.createLike({photo_id: this.props.photoId});
@@ -22,15 +26,20 @@ class Like extends Component {
   }
 
   likeStatus() {
-    console.log(this.props);
+    if (!this.props.likes.likes){
+      return null;
+    }
 
-    return <button onClick={this.like}>Like</button>;
-
+      if (this.props.likes.likes[this.props.currentUser.id]){
+        return <button onClick={this.unlike}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204685/like_red_xbv9jx.png" className='like-button'></img></button>;
+      } else {
+        return <button onClick={this.like}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204681/like_white_omu7uz.png" className='like-button'></img></button>;
+      }
   }
   render()  {
 
     return (
-      <div className="like-div">{this.likeStatus()}</div>
+      <div className="like-div">{this.likeStatus()} {Object.keys(this.props.likes.likes).length} Likes</div>
     );
   }
 

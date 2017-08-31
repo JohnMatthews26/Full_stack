@@ -11,8 +11,7 @@ const mapStateToProps = ({photo, session}) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestPhotoFeed: () => dispatch(requestPhotoFeed()),
-  requestAllLikes: () => dispatch(requestAllLikes())
+  requestPhotoFeed: () => dispatch(requestPhotoFeed())
 });
 
 export default withRouter(connect(

@@ -10,8 +10,7 @@ const mapStateToProps = ({ users, session }) => ({
 
 const mapDispatchToProps = dispatch => ({
   requestSingleUser: (id) => dispatch(requestSingleUser(id)),
-  getFollow: (id) => dispatch(getFollow(id)),
-  requestAllLikes: () => dispatch(requestAllLikes())
+  getFollow: (id) => dispatch(getFollow(id))
 });
 
 export default connect(
