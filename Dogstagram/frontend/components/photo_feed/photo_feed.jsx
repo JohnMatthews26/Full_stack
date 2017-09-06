@@ -9,7 +9,7 @@ class PhotoFeed extends Component {
 
   }
   componentDidMount() {
-
+    
     this.props.requestPhotoFeed();
 
   }
@@ -20,7 +20,9 @@ class PhotoFeed extends Component {
         <section className="photos_feed">
           <ul className="photos_feed">
             {photos.map(photo =>
-              <PhotoFeedItem key={photo.id} photo={photo} />)}
+              <PhotoFeedItem key={photo.id} photo={photo}
+                requestAllLikes={this.props.requestAllLikes}
+                getLike={this.props.getLike} />)}
           </ul>
         </section>
     );

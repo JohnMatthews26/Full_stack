@@ -16,7 +16,7 @@ const LikesReducer = (state = defaultState(), action) => {
     case RECEIVE_LIKE:
       const like = action.like;
       return merge({}, state, {
-        likes: { [like.user_id]: like }
+        likes: { [like.id]: like }
       });
     case RECEIVE_ALL_LIKES:
       return merge({}, state, { likes: action.likes });
@@ -24,7 +24,7 @@ const LikesReducer = (state = defaultState(), action) => {
       const newState = Object.assign({}, state);
       const like1 = action.like;
 
-        delete newState.likes[like1.user_id];
+        delete newState.likes[like1.id];
 
         return newState;
     default:

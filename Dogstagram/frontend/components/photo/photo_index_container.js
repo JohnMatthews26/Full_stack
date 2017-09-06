@@ -3,14 +3,16 @@ import PhotoIndex from './photo_index';
 import { requestAllPhoto } from '../../actions/photo_actions';
 import { selectAllPhoto } from '../../reducers/selectors';
 import {withRouter} from 'react-router';
-import {requestAllLikes} from '../../actions/likes_actions';
+import {requestAllLikes, getLike} from '../../actions/likes_actions';
 
 const mapStateToProps = ({photo}) => ({
   photo: selectAllPhoto(photo)
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestAllPhoto: (user_id) => dispatch(requestAllPhoto(user_id))
+  requestAllPhoto: (userId) => dispatch(requestAllPhoto(userId)),
+  requestAllLikes: (photoId) => dispatch(requestAllLikes(photoId)),
+  getLike: (photoId) => dispatch(getLike(photoId))
 });
 
 export default withRouter(connect(

@@ -14,10 +14,10 @@ class PhotoFeedItem extends Component {
       description: this.props.photo.description,
       user_id: this.props.photo.user_id
     };
+
   }
-    componentDidMount() {
-      this.props.requestAllLikes(this.state.id);
-    }
+
+
 
 
 
@@ -41,7 +41,7 @@ class PhotoFeedItem extends Component {
                 </img>
 
                 <Link to={`/users/${this.state.user_id}`}>{this.state.username}</Link>
-                <LikesContainer photoId={this.props.photo.id}/>
+                <LikesContainer photo={this.props.photo}/>
               </div>
               <section className="description-section">{this.state.description}</section>
 

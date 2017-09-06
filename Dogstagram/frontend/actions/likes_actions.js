@@ -33,8 +33,8 @@ export const requestAllLikes = (photo_id) => (dispatch) => {
 };
 
 
-export const getLike = (id) => dispatch => (
-  APIUtil.fetchSingleLike(id).then(like => {
+export const getLike = (photoId) => dispatch => (
+  APIUtil.fetchSingleLike(photoId).then(like => {
     dispatch(receiveLike(like));
   })
 );

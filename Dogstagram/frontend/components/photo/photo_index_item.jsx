@@ -15,7 +15,7 @@ class PhotoIndexItem extends Component {
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
-
+    
 
   }
 
@@ -56,7 +56,7 @@ class PhotoIndexItem extends Component {
                           src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
                         </img>
                         {this.state.username}
-                        <LikesContainer photoId={this.props.photo.id}/>
+                        <LikesContainer photo={this.props.photo}/>
                       </div>
 
                       <section className="description-section">{this.state.description}</section>

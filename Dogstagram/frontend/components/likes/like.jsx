@@ -9,37 +9,55 @@ class Like extends Component {
     this.like = this.like.bind(this);
     this.unlike = this.unlike.bind(this);
     this.likeStatus = this.likeStatus.bind(this);
+    this.likeCheck = this.likeCheck.bind(this);
   }
   componentWillMount(){
-    this.props.requestAllLikes(this.props.photoId);
+    this.props.requestAllLikes(this.props.photo.id);
   }
-  
+
+
   like(e) {
     e.preventDefault();
-    this.props.createLike({photo_id: this.props.photoId});
+    if (this.props.match.params.user_id) {
+      this.props.createLike({photo_id: this.props.photo.id}).then( () => {
+        this.props.requestAllPhoto(this.props.match.params.user_id);
+      });
+    } else {
+      this.props.createLike({photo_id: this.props.photo.id}).then( () => {
+        this.props.requestAllPhoto();
+      });
+    }
+
   }
 
   unlike(e) {
     e.preventDefault();
 
-    this.props.destroyLike(this.props.photoId);
+    if (this.props.match.params.user_id) {
+      this.props.destroyLike(this.props.photo.id).then( () => {
+        this.props.requestAllPhoto(this.props.match.params.user_id);
+      });
+    } else {
+      this.props.destroyLike(this.props.photo.id).then( () => {
+        this.props.requestAllPhoto();
+      });
+    }
+  }
+  likeCheck(el, idx, arr) {
+    return el.user_id === this.props.currentUser.id;
   }
 
   likeStatus() {
-    if (!this.props.likes.likes){
-      return null;
+    if (this.props.photo.likes.some(this.likeCheck)){
+      return <button onClick={this.unlike}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204685/like_red_xbv9jx.png" className='like-button'></img></button>;
+    } else {
+      return <button onClick={this.like}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204681/like_white_omu7uz.png" className='like-button'></img></button>;
     }
-
-      if (this.props.likes.likes[this.props.currentUser.id]){
-        return <button onClick={this.unlike}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204685/like_red_xbv9jx.png" className='like-button'></img></button>;
-      } else {
-        return <button onClick={this.like}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204681/like_white_omu7uz.png" className='like-button'></img></button>;
-      }
   }
   render()  {
 
     return (
-      <div className="like-div">{this.likeStatus()} {Object.keys(this.props.likes.likes).length} Likes</div>
+      <div className="like-div">{this.likeStatus()} {this.props.photo.likes.length} Likes</div>
     );
   }
 
