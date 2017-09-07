@@ -5,5 +5,6 @@
     json.username photo.user.username
     json.url asset_path(photo.url)
     json.likes photo.likes
+    json.comments photo.comments
   end
 end
