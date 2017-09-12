@@ -26,15 +26,15 @@ export const receiveAllComments = comments => ({
   comments
 });
 
-export const requestAllComments = (photo_id) => (dispatch) => {
-  return APIUtil.fetchAllComments(photo_id).then(comments => dispatch(
+export const requestAllComments = (photoId) => (dispatch) => {
+  return APIUtil.fetchAllComments(photoId).then(comments => dispatch(
     receiveAllComments(comments)
   ));
 };
 
 
-export const getComment = (photoId) => dispatch => (
-  APIUtil.fetchSingleComment(photoId).then(comment => {
+export const getComment = (id) => dispatch => (
+  APIUtil.fetchSingleComment(id).then(comment => {
     dispatch(receiveComment(comment));
   })
 );
