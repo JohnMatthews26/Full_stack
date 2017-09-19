@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import {withRouter} from 'react-router';
 import LikesContainer from '../likes/likes_container';
+import CommentsContainer from '../comments/comments_container';
 
 class PhotoIndexItem extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class PhotoIndexItem extends Component {
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
-    
+
 
   }
 
@@ -60,6 +61,7 @@ class PhotoIndexItem extends Component {
                       </div>
 
                       <section className="description-section">{this.state.description}</section>
+                      <CommentsContainer photo={this.props.photo}/>
                     </div>
                   </div>
                 </Modal>

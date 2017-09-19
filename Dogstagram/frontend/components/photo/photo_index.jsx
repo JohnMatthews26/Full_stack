@@ -9,7 +9,7 @@ class PhotoIndex extends Component {
 
   }
   componentDidMount() {
-    
+
     this.props.requestAllPhoto(this.props.match.params.user_id);
   }
   componentWillReceiveProps(nextProps) {
@@ -26,7 +26,8 @@ class PhotoIndex extends Component {
           <ul className="photos_index">
             {photos.map(photo => <PhotoIndexItem key={photo.id}
               photo={photo} requestAllLikes={this.props.requestAllLikes}
-              getLike={this.props.getLike} />)}
+              getLike={this.props.getLike}
+              requestAllComments={this.props.requestAllComments} />)}
           </ul>
         </section>
       );

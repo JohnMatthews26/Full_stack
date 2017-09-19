@@ -4,6 +4,7 @@ import { requestPhotoFeed } from '../../actions/photo_actions';
 import { selectAllPhoto } from '../../reducers/selectors';
 import {withRouter} from 'react-router';
 import {requestAllLikes, getLike} from '../../actions/likes_actions';
+import {requestAllComments, getComment} from '../../actions/comments_actions';
 
 
 const mapStateToProps = ({photo, session}) => ({
@@ -14,7 +15,9 @@ const mapStateToProps = ({photo, session}) => ({
 const mapDispatchToProps = dispatch => ({
   requestPhotoFeed: () => dispatch(requestPhotoFeed()),
   requestAllLikes: (photoId) => dispatch(requestAllLikes(photoId)),
-  getLike: (photoId) => dispatch(getLike(photoId))
+  getLike: (photoId) => dispatch(getLike(photoId)),
+  requestAllComments: (photoId) => dispatch(requestAllComments(photoId)),
+  getComment: (id) => dispatch(getComment(id))
 });
 
 export default withRouter(connect(
