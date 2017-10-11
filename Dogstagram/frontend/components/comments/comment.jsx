@@ -54,7 +54,7 @@ class Comment extends Component {
             onChange={this.update('body')}
             className="comment-input"
           />
-        <input type="submit" />
+        <input type="submit" className='comments_submit' />
         </form>
         <ul className='comments-ul'>
           {comments.map(comment => <CommentItem key={comment.id}
