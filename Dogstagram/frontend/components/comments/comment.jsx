@@ -58,7 +58,7 @@ class Comment extends Component {
         </form>
         <ul className='comments-ul'>
           {comments.map(comment => <CommentItem key={comment.id}
-          body={comment.body} comment={comment} />)}
+          body={comment.body} comment={comment}  />)}
         </ul>
       </div>
     );
