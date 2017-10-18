@@ -54,3 +54,16 @@ li.photo-index-item {
 textarea.comment-input {
     width: 100%;
 }
+li.comment-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.comment-username {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.comment-body {
+    font-weight: 100;
+}

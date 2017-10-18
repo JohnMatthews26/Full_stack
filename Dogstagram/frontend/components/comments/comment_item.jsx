@@ -20,8 +20,8 @@ class CommentItem extends Component {
 
       <div>
         <li className="comment-item">
-          {this.props.username}
-          {this.props.body}
+          <div className='comment-username'>{this.props.username}</div>
+          <div className='comment-body'>{this.props.body}</div>
 
         </li>
       </div>
