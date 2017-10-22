@@ -47,9 +47,9 @@ class Comment extends Component {
       <div className="comments-div">
         <form className="comment-form" onSubmit={this.handleSubmit}>
 
-          <textarea
+          <input
             placeholder="Add a Comment"
-            rows="1"
+            rows="2"
             value={this.state.body}
             onChange={this.update('body')}
             className="comment-input"
