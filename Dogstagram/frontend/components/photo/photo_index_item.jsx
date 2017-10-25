@@ -49,17 +49,18 @@ class PhotoIndexItem extends Component {
                 className="photo-show-modal"
                 >
                   <div className="image-show-modal-box">
+                    <div className="image-show-username">
+                      <img className="profile-pic-thumbnail"
+                        src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
+                      </img>
+                      {this.state.username}
+
+                    </div>
                     <img src={this.state.url} alt={this.state.id} className="photo-show" />
                     <div className="image-show-info">
 
-                      <div className="image-show-username">
-                        <img className="profile-pic-thumbnail"
-                          src="http://res.cloudinary.com/roscoe/image/upload/v1501008468/bulldog_stock_photo_uwszgt.jpg">
-                        </img>
-                        {this.state.username}
-                        <LikesContainer photo={this.props.photo}/>
-                      </div>
 
+                      <LikesContainer photo={this.props.photo}/>
                       <section className="description-section">{this.state.description}</section>
                       <CommentsContainer photo={this.props.photo}/>
                     </div>
