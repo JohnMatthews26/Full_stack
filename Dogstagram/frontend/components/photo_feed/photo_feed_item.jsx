@@ -45,7 +45,7 @@ class PhotoFeedItem extends Component {
                 <LikesContainer photo={this.props.photo}/>
               </div>
               <section className="description-section">{this.state.description}</section>
-
+              <CommentsContainer photo={this.props.photo}/>
             </div>
         </li>
       </div>
