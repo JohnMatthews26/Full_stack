@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import {withRouter} from 'react-router';
 import { Link } from 'react-router-dom';
 import LikesContainer from '../likes/likes_container';
+import CommentsContainer from '../comments/comments_container';
 
 class PhotoFeedItem extends Component {
   constructor(props) {
