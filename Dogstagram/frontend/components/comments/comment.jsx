@@ -31,6 +31,7 @@ class Comment extends Component {
       this.props.createComment({photo_id: this.props.photo.id,
         body: this.state.body}).then( () => {
         this.props.requestAllPhoto();
+        this.state.body = "";
       });
     }
 
