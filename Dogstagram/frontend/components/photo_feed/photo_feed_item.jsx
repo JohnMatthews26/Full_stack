@@ -44,7 +44,10 @@ class PhotoFeedItem extends Component {
             className="photo-feed-img" />
 
               <LikesContainer photo={this.props.photo}/>
-              <section className="description-section">{this.state.description}</section>
+                <div className='username-description'>
+                  <div className='username-div'>{this.state.username}</div>
+                  <div className="description-div">{this.state.description}</div>
+                </div>
               <CommentsContainer photo={this.props.photo}/>
 
         </li>
