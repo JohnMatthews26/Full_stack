@@ -73,37 +73,43 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
+      <div className='login-splash-div'>
+        <div className="login-form-container">
+          <form onSubmit={this.handleSubmit} className="login-form-box">
 
-          <br/>
+            <br/>
 
 
-          <div className="login-form">
-            {this.renderErrors()}
-            <br/>
-            <label className="username_password_label">
-              <input type="text"
-                value={this.state.username}
-                onChange={this.update('username')}
-                className="login-input"
-                placeholder="Username"
-              />
-            </label>
-            <br/>
-            <label className="username_password_label">
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-                placeholder="Password"
-              />
-            </label>
-            <br/>
-            <input type="submit" value={this.signUpButtonText()} className="authsubmitbutton"/>
-            {this.showDemoButton()}
-          </div>
-        </form>
+            <div className="login-form">
+              {this.renderErrors()}
+              <br/>
+              <label className="username_password_label">
+                <input type="text"
+                  value={this.state.username}
+                  onChange={this.update('username')}
+                  className="login-input"
+                  placeholder="Username"
+                />
+              </label>
+              <br/>
+              <label className="username_password_label">
+                <input type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className="login-input"
+                  placeholder="Password"
+                />
+              </label>
+              <br/>
+              <input type="submit" value={this.signUpButtonText()} className="authsubmitbutton"/>
+              {this.showDemoButton()}
+            </div>
+          </form>
+        </div>
+        <div className='splash-img-div'>
+
+          <img className='site-preview' src='http://res.cloudinary.com/roscoe/image/upload/v1509567655/Screen_Shot_2017-11-01_at_1.20.36_PM_frr8xo.png'></img>
+        </div>
       </div>
     );
   }

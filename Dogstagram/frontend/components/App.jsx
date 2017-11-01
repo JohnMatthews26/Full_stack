@@ -20,7 +20,7 @@ import PhotoFeedContainer from './photo_feed/photo_feed_container';
 
 const App = () => (
   <div className="mainDiv">
-    <div className='main-page-div'>
+
     <section className="login-signup_container">
       <header>
         <GreetingContainer />
@@ -30,13 +30,9 @@ const App = () => (
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </Switch>
     </section>
-    <div className='splash-image-div'>
-      <img className='splash-image' src='http://res.cloudinary.com/roscoe/image/upload/v1500570035/iphone_image_qlxqp2.jpg'>
 
-      </img>
-    </div>
-    </div>
-      <SignInBorderContainer />
+
+
 
     <Switch>
     <ProtectedRoute path="/users/:user_id" component={UserProfileContainer} />
