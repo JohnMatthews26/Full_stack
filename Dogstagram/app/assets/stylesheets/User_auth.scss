@@ -410,10 +410,7 @@ main#root {
 /* line 353, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 371, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 391, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
-.mainDiv {
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* line 241, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
 /* line 265, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/User_auth.scss */
@@ -459,4 +456,11 @@ a.user_profile_link {
 section.logout-myprofilebuttons {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.main-page-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
 }
