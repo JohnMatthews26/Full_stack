@@ -74,6 +74,9 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className='login-splash-div'>
+        <div className='splash-img-div'>
+          <img className='site-preview' src='http://res.cloudinary.com/roscoe/image/upload/v1509648627/Screen_Shot_2017-11-02_at_11.50.09_AM_misnip.png'></img>
+        </div>
         <div className="login-form-container">
           <form onSubmit={this.handleSubmit} className="login-form-box">
 
@@ -81,6 +84,9 @@ class SessionForm extends React.Component {
 
 
             <div className="login-form">
+              <section className="logo_section">
+                <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/v1501173784/a1c6256038a53cb2a5055d06a0169b8d-png-150x125_nznv16.png" alt="logo"></img></h1>
+              </section>
               {this.renderErrors()}
               <br/>
               <label className="username_password_label">
@@ -110,6 +116,7 @@ class SessionForm extends React.Component {
 
           <img className='site-preview' src='http://res.cloudinary.com/roscoe/image/upload/v1509567655/Screen_Shot_2017-11-01_at_1.20.36_PM_frr8xo.png'></img>
         </div>
+
       </div>
     );
   }

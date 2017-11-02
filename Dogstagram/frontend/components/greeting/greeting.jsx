@@ -9,9 +9,7 @@ const sessionLinks = () => (
       <Link to="/login" className="login_signup_links">Login/Demo</Link>
       <Link to="/signup" className="login_signup_links">Sign up</Link>
     </section>
-    <section className="logo_section">
-      <h1 className="logo"><img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/v1501173784/a1c6256038a53cb2a5055d06a0169b8d-png-150x125_nznv16.png" alt="logo"></img></h1>
-    </section>
+
   </nav>
 );
 
