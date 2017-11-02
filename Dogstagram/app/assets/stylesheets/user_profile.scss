@@ -4,6 +4,7 @@
 /* line 5, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 6, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 7, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 8, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 .user-profile-parent {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@
 /* line 15, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 17, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 19, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 21, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 .user-profile-top-section {
   display: flex;
   flex-direction: row;
@@ -31,6 +33,7 @@
 /* line 26, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 29, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 32, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 35, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 .user-profile-photo-section {
   display: flex;
   flex: 2;
@@ -40,6 +43,7 @@
 /* line 32, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 36, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 40, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 44, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 .user-profile-box {
   display: flex;
   flex-direction: row;
@@ -55,6 +59,7 @@
 /* line 45, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 50, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 54, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 59, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 .user-profile-username {
   font-size: 26px;
   font-weight: lighter;
@@ -63,21 +68,24 @@
 
 /* line 56, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 61, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 67, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 .user-profile-photo {
   width: 200px;
 }
 
 /* line 60, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 /* line 66, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 73, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 img.profile-pic-photo {
   width: 100%;
   height: 100%;
 }
 
 /* line 71, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 79, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 button.follow-button {
   text-align: center;
-  width: 60px;
+  width: 70px;
   padding: 10px;
   margin: 15px;
   border-radius: 5px;
@@ -87,6 +95,7 @@ button.follow-button {
 }
 
 /* line 82, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
+/* line 91, /Users/johnmatthews/Desktop/full_stack/Dogstagram/app/assets/stylesheets/user_profile.scss */
 button.edit-profile-button {
   text-align: center;
   padding: 10px;
