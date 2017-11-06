@@ -72,9 +72,6 @@ I plan to continue to work on Dogstagram to implement all of the features I have
 
 I plan to allow users to search for one another through usernames. This is crucial to the site, and will likely be the first next step I take.
 
-#### Likes & Comments
-
-Likes and comments are a core part of Instagram that I intend to add to Dogstagram.
 
 #### Dog Breed Tags
 
