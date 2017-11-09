@@ -42,14 +42,14 @@ class PhotoFeedItem extends Component {
           <img src={this.state.url}
             alt={this.state.id}
             className="photo-feed-img" />
-
+          <div className='photo-info-bottom-section'>
               <LikesContainer photo={this.props.photo}/>
                 <div className='username-description'>
                   <div className='username-div'>{this.state.username}</div>
                   <div className="description-div">{this.state.description}</div>
                 </div>
               <CommentsContainer photo={this.props.photo}/>
-
+          </div>
         </li>
       </div>
     );
