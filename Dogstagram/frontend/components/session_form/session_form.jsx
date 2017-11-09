@@ -74,9 +74,7 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className='login-splash-div'>
-        <div className='splash-img-div'>
-          <img className='site-preview' src='http://res.cloudinary.com/roscoe/image/upload/v1509648627/Screen_Shot_2017-11-02_at_11.50.09_AM_misnip.png'></img>
-        </div>
+
         <div className="login-form-container">
           <form onSubmit={this.handleSubmit} className="login-form-box">
 
@@ -112,10 +110,7 @@ class SessionForm extends React.Component {
             </div>
           </form>
         </div>
-        <div className='splash-img-div'>
 
-          <img className='site-preview' src='http://res.cloudinary.com/roscoe/image/upload/v1509567655/Screen_Shot_2017-11-01_at_1.20.36_PM_frr8xo.png'></img>
-        </div>
 
       </div>
     );
