@@ -20,7 +20,7 @@ const personalGreeting = (currentUser, logout) => (
     <section className="logo_section">
       <Link to="/" className="logo_link_home">
         <h1 className="logo">
-          <img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/v1501174273/a1c6256038a53cb2a5055d06a0169b8d-png-70x58_rjei6i.png" alt="logo"></img>
+          <img className="logo"src="http://res.cloudinary.com/roscoe/image/upload/v1501173784/a1c6256038a53cb2a5055d06a0169b8d-png-150x125_nznv16.png" alt="logo"></img>
         </h1>
       </Link>
     </section>
