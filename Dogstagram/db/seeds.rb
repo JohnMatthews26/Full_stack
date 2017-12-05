@@ -8,6 +8,7 @@
 
 Photo.destroy_all
 User.destroy_all
+Like.destroy_all
 
 user1 = User.create(username: "john", password: "password")
 user2 = User.create(username: "BrucetheBulldog", password: "password")
