@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import Greeting from './greeting';
 
-const mapStateToProps = ({ session }) => ({
-  currentUser: session.currentUser
+const mapStateToProps = ({ session, users }) => ({
+  currentUser: session.currentUser,
+  users: users.entities
 });
 
 const mapDispatchToProps = dispatch => ({

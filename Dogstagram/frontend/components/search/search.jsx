@@ -12,11 +12,7 @@ class Search extends Component {
     this.props.requestAllUsers();
   }
 
-  componentDidMount(){
 
-    // console.log(this.props.users);
-    console.log(this.props.users);
-  }
 
 
   render()  {
