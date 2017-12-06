@@ -14,8 +14,26 @@ class Search extends Component {
   componentWillMount(){
     this.props.requestAllUsers();
   }
+
   usersList(){
-    console.log(this.props.users.entities);
+    let len = this.state.username.length - 1;
+    let entry = this.state.username.slice(0, len).toLowerCase();
+    if (len > 0){
+      let validUsers = [];
+      let usersArray = Object.entries(this.props.users.entities);
+      usersArray.forEach(function(value) {
+        let usernamePartial = value[1].username.slice(0, len).toLowerCase();
+        // console.log(usernamePartial);
+        // console.log(entry);
+        // console.log(len);
+
+        if (entry == usernamePartial) {
+          validUsers.push(value[1].username);
+        }
+      });
+      console.log(validUsers);
+      return validUsers;
+    }
   }
 
   update(field) {
