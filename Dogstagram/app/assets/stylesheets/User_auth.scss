@@ -686,3 +686,13 @@ img.site-preview {
   width: auto;
   margin: 30px;
 }
+input.search-input {
+    background-color: whitesmoke;
+    height: 40px;
+    width: 250px;
+    border-radius: 3px;
+    /* border: 2px solid black; */
+    box-shadow: 3px 3px 3px gray;
+    text-align: center;
+    margin-right: 50px;
+}

@@ -6,10 +6,23 @@ class Search extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      username: ''
+    };
 
   }
   componentWillMount(){
     this.props.requestAllUsers();
+  }
+  usersList(){
+    console.log(this.props.users.entities);
+  }
+
+  update(field) {
+    this.usersList();
+    return e => this.setState({
+      [field]: e.currentTarget.value
+    });
   }
 
 
@@ -19,9 +32,14 @@ class Search extends Component {
     const users = this.props.users;
     return (
       <section className="users-list">
-        <ul className="users-list">
-
-        </ul>
+        <form>
+          <input type="text"
+            value={this.state.username}
+            onChange={this.update('username')}
+            className="search-input"
+            placeholder="Search Users"
+          />
+        </form>
       </section>
     );
   }
