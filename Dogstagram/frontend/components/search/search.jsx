@@ -81,18 +81,16 @@ class Search extends Component {
       usersArray.forEach(function(value) {
         let usernamePartial = value[1].username.slice(0, len).toLowerCase();
         let userId = value[0];
-        // console.log(usernamePartial);
-        // console.log(value);
-        // console.log(len);
-        // if (entry == usernamePartial) {
-        //   validUsers.push([userId, value[1].username]);
-        // }
-        validUsers.push([userId, value[1].username]);
+
+        if (entry == usernamePartial) {
+          validUsers.push([userId, value[1].username]);
+        }
+
       });
       console.log(validUsers);
       return (
         <ul className="users-list">
-        {validUsers.map(el => <Link to={`/users/${el[0]}`} className="link-to-profile"><li key="${el[1]}" className="user-link">{el[1]}</li></Link>)}
+        {validUsers.map(el => <Link to={`/users/${el[0]}`} className="link-to-profile" onClick={this.clear("username")}><li key="${el[1]}" className="user-link">{el[1]}</li></Link>)}
         </ul>
       );
     }
@@ -101,6 +99,12 @@ class Search extends Component {
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
+    });
+  }
+
+  clear(field){
+    return e => this.setState({
+      [field]: ""
     });
   }
 
