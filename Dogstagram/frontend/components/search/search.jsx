@@ -84,14 +84,15 @@ class Search extends Component {
         // console.log(usernamePartial);
         // console.log(value);
         // console.log(len);
-        if (entry == usernamePartial) {
-          validUsers.push([userId, value[1].username]);
-        }
+        // if (entry == usernamePartial) {
+        //   validUsers.push([userId, value[1].username]);
+        // }
+        validUsers.push([userId, value[1].username]);
       });
       console.log(validUsers);
       return (
         <ul className="users-list">
-        {validUsers.map(el => <Link to={`/users/${el[0]}`}><li key="${el[1]}" className="user-link">{el[1]}</li></Link>)}
+        {validUsers.map(el => <Link to={`/users/${el[0]}`} className="link-to-profile"><li key="${el[1]}" className="user-link">{el[1]}</li></Link>)}
         </ul>
       );
     }
