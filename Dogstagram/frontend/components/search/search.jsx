@@ -73,7 +73,7 @@ class Search extends Component {
 // export default withRouter(Search);
 
   usersList(){
-    let len = this.state.username.length - 1;
+    let len = this.state.username.length;
     let entry = this.state.username.slice(0, len).toLowerCase();
     if (len > 0){
       let validUsers = [];
