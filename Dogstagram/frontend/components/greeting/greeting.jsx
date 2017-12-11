@@ -24,13 +24,13 @@ const personalGreeting = (currentUser, logout) => (
         </h1>
       </Link>
     </section>
-
+    <SearchContainer />
     <section className="logout-myprofilebuttons">
 
       <button className="header-button" onClick={logout}>Log Out</button>
       <Link to={`/users/${currentUser.id}`} className="user_profile_link">My Profile</Link>
       <UploadPhotoContainer />
-      <SearchContainer />
+
     </section>
 	</hgroup>
 );
