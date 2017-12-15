@@ -1,7 +1,6 @@
 # Dogstagram
 
-  [Heroku link][heroku]
-  [heroku]: https://dogstagrm.herokuapp.com/#/
+   https://dogstagrm.herokuapp.com/#/
 
 ## About Dogstagram
 
@@ -68,9 +67,6 @@
 
 I plan to continue to work on Dogstagram to implement all of the features I have envisioned. Listed below are some of these features.
 
-#### User Search
-
-I plan to allow users to search for one another through usernames. This is crucial to the site, and will likely be the first next step I take.
 
 
 #### Dog Breed Tags
