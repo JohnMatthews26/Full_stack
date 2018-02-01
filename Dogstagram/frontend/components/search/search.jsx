@@ -87,7 +87,6 @@ class Search extends Component {
         }
 
       });
-      console.log(validUsers);
       return (
         <ul className="users-list">
         {validUsers.map(el => <Link to={`/users/${el[0]}`} className="link-to-profile" onClick={this.clear("username")}><li key="${el[1]}" className="user-link">{el[1]}</li></Link>)}
