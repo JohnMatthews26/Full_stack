@@ -47,6 +47,15 @@ class Like extends Component {
     return el.user_id === this.props.currentUser.id;
   }
 
+  pluralCheck(x){
+    console.log(x);
+    if (x === 1) {
+      return "Like";
+    } else {
+      return "Likes";
+    }
+  }
+
   likeStatus() {
     if (this.props.photo.likes.some(this.likeCheck)){
       return <button onClick={this.unlike}><img src="http://res.cloudinary.com/roscoe/image/upload/v1504204685/like_red_xbv9jx.png" className='like-button'></img></button>;
@@ -57,7 +66,7 @@ class Like extends Component {
   render()  {
 
     return (
-      <div className="like-div">{this.likeStatus()} {this.props.photo.likes.length} Likes</div>
+      <div className="like-div">{this.likeStatus()} {this.props.photo.likes.length} {this.pluralCheck(this.props.photo.likes.length)}</div>
     );
   }
 
