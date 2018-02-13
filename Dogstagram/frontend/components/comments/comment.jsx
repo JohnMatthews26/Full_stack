@@ -19,7 +19,7 @@ class Comment extends Component {
 
   handleSubmit(e) {
 
-    console.log(this.props);
+
     e.preventDefault();
     if (this.props.match.params.user_id) {
       this.props.createComment({photo_id: this.props.photo.id,
