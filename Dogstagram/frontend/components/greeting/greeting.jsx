@@ -28,6 +28,7 @@ const personalGreeting = (currentUser, logout) => (
     <section className="logout-myprofilebuttons">
 
       <button className="header-button" onClick={logout}>Log Out</button>
+
       <Link to={`/users/${currentUser.id}`} className="user_profile_link">My Profile</Link>
       <UploadPhotoContainer />
 
