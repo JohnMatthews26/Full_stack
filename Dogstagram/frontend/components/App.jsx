@@ -20,8 +20,6 @@ import PhotoFeedContainer from './photo_feed/photo_feed_container';
 
 const App = () => (
   <div className="mainDiv">
-
-
       <header>
         <GreetingContainer />
       </header>
@@ -29,10 +27,6 @@ const App = () => (
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </Switch>
-
-
-
-
 
     <Switch>
     <ProtectedRoute path="/users/:user_id" component={UserProfileContainer} />
